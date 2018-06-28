@@ -28,7 +28,7 @@ var VElement = function(tagName, props, children) {
   // void 666 表示 undefined
   this.key = props ? props.key : void 666;
 
-  // 后代元素的数量
+  // 后代元素的数量（包括文本节点）
   var count = 0;
 
   util.each(this.children, function(child, i) {
